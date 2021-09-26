@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+    <link rel="shortcut icon" href="téléchargé.jpg" type="image/x-icon">
+    <script lang="Javascript" src="script.js"></script>
+</head>
+<body>
+    <h3>Restaurant L'Orient Vous Souhaite La Bienvenue <br>Et Bon Appétit</h3>
+    <img src="téléchargé.jpg" alt="error 404" class="Img">
+    <h4>Commande:</h4>
+    <form action="resulatat.html" id="pla"> 
+    <fieldset class="R">
+        <table>
+            <tr>
+                <td>
+                    Nom Et Prénom :
+                </td>
+                <td>
+                    <input type="text" id="N">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Adresse :
+                </td>
+                <td>
+                    <input type="text" id="A">
+                </td>
+            </tr> <br>
+            <tr>
+                <td>
+                    Menu
+                </td><br>
+                <td>
+                    Quantité
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="LISTE DE CHOIX" id="list" >
+                        <option value="" disabled selected>Choisir un plat</option>
+                        <option value="3.500" id="c">Couscous</option>
+                        <option value="4.500" id="s">Spaghetti</option>
+                        <option value="6.900" id="p">Polonaise</option>
+                      </select>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+        <button class="btn" onclick="return Buy()" >Valider</button>
+        <input type="button" onclick="reset()" value="Annuler" class="btnr">
+    </fieldset>
+</form>
+</html>
